@@ -1,0 +1,109 @@
+.shopping-list-header {
+  background: rgba(230, 230, 230, 0.2);
+}
+.shopping-list-header h1 {
+  font-size: .9rem;
+  color: #666;
+  font-weight: 400;
+}
+.shopping-list-header a {
+  color: #999;
+}
+.shopping-list-section .shopping-list-login {
+  line-height: 59px;
+  display: block;
+  background: white;
+}
+.shopping-list-section .shopping-list-login .mui-pull-left {
+  margin-left: 5%;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.1rem;
+}
+.shopping-list-section .shopping-list-login .mui-pull-right {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: .6rem;
+  margin-right: 3%;
+}
+.shopping-list-section .shopping-list-login .mui-pull-right .mui-icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.shopping-list-section .shopping-list-car {
+  line-height: 59px;
+  height: 60px;
+  display: block;
+  background: rgba(220, 220, 220, 0.5);
+}
+.shopping-list-section .shopping-list-car .mui-row {
+  margin-left: 7%;
+}
+.shopping-list-section .shopping-list-car img {
+  width: 45px;
+  vertical-align: middle;
+}
+.shopping-list-section .shopping-list-car .list-car-spanone {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: .8rem;
+}
+.shopping-list-section .shopping-list-car .list-car-spantwo {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 0 0.78rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8rem;
+}
+.shopping-list-section .shopping-list-h5 {
+  height: 45px;
+  line-height: 44px;
+  background: #fff;
+  font-size: .85rem;
+  padding: 0 .75rem;
+  margin: 0;
+  color: black;
+}
+.shopping-list-section .shopping-list-thing {
+  background: white;
+}
+.shopping-list-section .shopping-list-thing img {
+  width: 100%;
+}
+.shopping-list-section .shopping-list-thing dl {
+  margin: 0;
+  margin-top: 2%;
+}
+.shopping-list-section .shopping-list-thing dd {
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.shopping-list-section .shopping-list-thing dd:nth-child(2) {
+  font-size: .9rem;
+  color: rgba(0, 0, 0, 0.87);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.shopping-list-section .shopping-list-thing dd:nth-child(3) {
+  font-size: .95rem;
+  color: #ff6000;
+  margin-top: .2rem;
+}
+.shopping-list-section .shopping-list-thing dd:nth-child(3) span {
+  font-size: .3rem;
+  vertical-align: bottom;
+  margin-right: .05rem;
+  font-weight: 400;
+  -webkit-transform: translateY(0.01rem);
+  margin-right: .2rem;
+}
+.shopping-list-section .shopping-list-thing .xs-6-left {
+  padding-right: 1%;
+}
+.shopping-list-section .shopping-list-thing .xs-6-right {
+  padding-left: 1%;
+}

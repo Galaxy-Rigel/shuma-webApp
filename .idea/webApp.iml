@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://C:/wamp/www/PHP" />
+    <content url="file://C:/wamp/www/angular" />
+    <content url="file://C:/wamp/www/gitdemo" />
+    <content url="file://C:/wamp/www/gitproject" />
+    <content url="file://C:/wamp/www/gulp" />
+    <content url="file://C:/wamp/www/ionic" />
+    <content url="file://C:/wamp/www/mysql" />
+    <content url="file://C:/wamp/www/nodejs" />
+    <content url="file://C:/wamp/www/project" />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="webApp node_modules" level="project" />
+    <orderEntry type="library" name="angular node_modules" level="project" />
+    <orderEntry type="library" name="gulp node_modules" level="project" />
+    <orderEntry type="library" name="project node_modules" level="project" />
+  </component>
+</module>

@@ -1,0 +1,62 @@
+body {
+  font-family: arial;
+}
+#login_logo {
+  padding: 40px 20px 20px 20px;
+}
+#login_logo div p {
+  font-size: 18px;
+  color: black;
+  padding-top: 25px;
+}
+#login_input {
+  padding: 0 20px 120px 20px;
+}
+#login_input form {
+  border-radius: 15px;
+}
+#login_input div.mui-row {
+  width: 100%;
+}
+#login_input div.mui-row div {
+  width: 100%;
+  padding: 40px 0;
+}
+#login_input div.mui-row div button {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 0;
+  font-size: 16px;
+}
+#login_input div.login_other_type {
+  text-align: center ;
+}
+#login_input div.login_other_type fieldset.login_other_title {
+  border: 0;
+  border-top: 1px dashed #bdbdbd;
+  padding-top: 10px;
+}
+#login_input div.login_other_type fieldset.login_other_title legend.login_other_txt {
+  margin: 0;
+  padding: 0;
+}
+#login_input div.login_other_type div.mui-row .mui-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: dodgerblue;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+#login_input div.login_other_type div.mui-row .mui-icon.mui-icon-weibo {
+  background: orangered;
+}
+#login_input div.login_other_type .forgetPsw {
+  margin-top: 20px;
+}
+#login_input div.login_other_type .forgetPsw a {
+  color: darkgray;
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米账号登陆</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>		
+	</head>
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+
+		<header id="login_logo">
+			<div class="mui-text-center">
+				<svg width="50px" height="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+					<rect width="50" height="50" style="fill:#ef5b00"></rect>
+					<rect x="11.25" y="15" width="5" height="20" style="fill:#FFFFFF"></rect>
+					<rect x="11.25" y="15" width="12.5" height="5" style="fill:#FFFFFF"></rect>
+					<rect x="26.25" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect>
+					<rect x="33.75" y="15" width="5" height="20" style="fill:#FFFFFF"></rect>
+					<circle cx="23.75" cy="22.5" r="7.5" fill="#FFFFFF"></circle>
+					<rect x="16.25" y="20" width="7.5" height="15" style="fill:#ef5b00"></rect>
+					<rect x="16.25" y="22.5" width="10" height="12.5" style="fill:#ef5b00"></rect>
+					<circle cx="23.75" cy="22.5" r="2.5" fill="#ef5b00"></circle>
+					<rect x="18.75" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect>
+				</svg>
+				<p>小米账号登陆</p>
+			</div>
+		</header>
+		
+		<section id="login_input">
+			<form class="mui-input-group" id="loginForm">
+				<div class="mui-input-row">
+					<label>用户名</label>
+					<input type="text" id="userInput" class="mui-input-clear" placeholder="请输入用户名">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input type="password" id="pswInput" class="mui-input-password" placeholder="请输入密码">
+				</div>
+			</form>
+			<div for="loginForm " class="mui-row">
+				<div class="mui-col-xs-12">
+					<button type="submit" id="loginBtn" class="mui-btn mui-btn-primary">立即登陸</button>
+				</div>
+			</div>
+			
+			<div class="login_other_type">
+				<fieldset class="login_other_title">
+					<legend class="login_other_txt" align="center">其他登陸方式</legend>
+				</fieldset>
+				<div class="mui-row" align="center">
+					<p class="mui-col-xs-3"></p>
+					<p class="mui-col-xs-2">
+						<a class="mui-icon mui-icon-weixin "></a>
+					</p>
+					<p class="mui-col-xs-2">
+						<a class="mui-icon mui-icon-weibo "></a>
+					</p>
+					<p class="mui-col-xs-2">
+						<a class="mui-icon mui-icon-qq"></a>
+					</p>
+				</div>
+				<div class="mui-row forgetPsw">
+					<a href="" class="mui-col-xs-2"></a>
+					<a class="mui-col-xs-4">
+						注册小米账号
+					</a>
+					<a class="mui-col-xs-4">
+						忘记密码？
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="absoluteDiv">
+				<div class="mui-row">
+					<div class="mui-col-xs-12">
+						<p align="center">简体 &nbsp; | &nbsp;繁体&nbsp; | &nbsp;English&nbsp; | &nbsp;常见问题 </p>
+					</div>
+					<div class="mui-col-xs-12" align="center">
+						<p>小米公司版权所有-京ICP备10046444 <img src="images/ghs.png"/>京公网安备</p>
+						<p>11010802020134号-京ICP证110507号</p>
+					</div>
+				</div>	
+			</div>
+		</footer>
+	</body>
+</html>

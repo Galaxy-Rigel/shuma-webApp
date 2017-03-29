@@ -1,0 +1,136 @@
+* {
+  list-style: none;
+}
+@-webkit-keyframes mov {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes mov1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body img {
+  width: 100%;
+  display: block;
+}
+body header div img {
+  margin-top: 30%;
+  margin-left: -15%;
+}
+body header div a {
+  color: white;
+  margin-left: 30%;
+}
+body .index-news {
+  background: white;
+  height: 50px;
+  line-height: 25px;
+  font-size: 15px;
+}
+body .index-news .sc-news {
+  position: relative;
+}
+body .index-news .sc-news li {
+  position: absolute;
+  margin-left: -40px;
+}
+body .index-news .sc-news li:nth-child(1) {
+  -webkit-animation: mov 3s infinite;
+}
+body .index-news .sc-news li:nth-child(2) {
+  -webkit-animation: mov1 3s infinite;
+}
+body .box {
+  background: white;
+  margin-top: 2%;
+}
+body .top-imgs div:nth-child(2) img {
+  margin: 0.5%;
+}
+body .index-content dd {
+  margin-left: 14px;
+}
+body .index-content img {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+body .index-content p {
+  font-size: 20px;
+  color: red;
+  padding-left: 8%;
+}
+body .index-content h5 {
+  padding-left: 8%;
+}
+body .index-more {
+  text-align: center;
+}
+body .index-more a {
+  color: darkslategray;
+  line-height: 50px;
+}
+body .index-text ul {
+  padding: 20px;
+}
+body .index-text ul li:nth-child(2) {
+  font-size: 12px;
+  color: gray;
+}
+body .index-text ul p {
+  color: red;
+  margin-top: 5%;
+  font-size: 20px;
+}
+body .index-img6 img {
+  padding: 1%;
+}
+body .index-text2 ul {
+  padding-left: 15px;
+}
+body .index-text2 p {
+  color: red;
+  margin-top: 5%;
+  font-size: 20px;
+  margin-top: 5px;
+}
+body .index-text2 img {
+  margin-left: 0.5%;
+}
+body .shopping-top {
+  position: fixed;
+  bottom: 2.5%;
+  right: 4%;
+  z-index: 999999;
+}
+body .shopping-top img {
+  width: 38%;
+}
+body .shopping-top-hide {
+  display: none;
+}

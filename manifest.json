@@ -1,0 +1,672 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H5500B372",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "porject",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "public/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        "Audio": {
+            "description": "访问麦克风"
+        },
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Camera": {
+            "description": "访问摄像头"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        "Geolocation": {
+            "description": "访问位置信息"
+        },
+         "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        "Messaging": {
+            "description": "访问通讯能力"
+        },
+        "Orientation": {
+            "description": "访问方向感应器"
+        },
+        "Proximity": {
+            "description": "访问距离感应器"
+        },
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        "Barcode": {
+            "description": "管理二维码扫描插件"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {
+            "description": "管理语音识别插件"
+        },
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        },"Push":{},"Share":{},"OAuth":{},"Payment":{},"Statistic":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+			},
+			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": ""
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			}
+		}
+	},"fullscreen":false,
+	"dependencies": {
+		"pages": {
+			"public/index.html": {
+				"resources": [
+					"public/myaccount_content.html",
+					"public/js/mui.min.js",
+					"public/css/mui.min.css",
+					"public/fonts/mui.ttf",
+					"public/js/index.js",
+					"public/shopping-list.html",
+					"public/login.html",
+					"public/main.html"
+				],
+				"refer": [
+					"public/car.html",
+					"public/type.html",
+					"public/shopping-list-content.html",
+					"public/classify-details-product01.html",
+					"public/classify.html"
+				],
+				"priority": 0
+			},
+			"public/login.html": {
+				"resources": [
+					"public/images/ghs.png",
+					"public/css/login.css",
+					"public/js/login.js",
+					"public/js/mui.min.js",
+					"public/css/mui.min.css",
+					"public/fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"public/myaccount_content.html": {
+				"resources": [
+					"public/css/myaccount_content.css",
+					"public/images/avatar_e29d6cb.png",
+					"public/images/nav-1_f74ca94.png",
+					"public/images/i-setting_4ddebe5.png",
+					"public/images/i-service_7b9f412.png",
+					"public/images/i-mihome_c836072.png",
+					"public/images/i-wallet_13a8fda.png",
+					"public/js/myaccount_content.js",
+					"public/images/bg_0425a88.png",
+					"public/images/nav-4_42676a4.png",
+					"public/js/mui.min.js",
+					"public/css/mui.min.css",
+					"public/fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"public/shopping-list.html": {
+				"resources": [
+					"public/images/25659893-c5fa-50a2-4889-2ab219d2d0ce.webp",
+					"public/images/6b0e3756-f419-1877-9d0f-5ea9ceca718e.webp",
+					"public/images/138fd453-4cbf-b780-d9b8-bdfa48c8ff41.webp",
+					"public/images/85b26c5f-a017-644a-b183-06cf7b1d93fd.webp",
+					"public/images/d48b3788-0518-c515-2c49-3bef35b6f7ca.webp",
+					"public/images/9f7e141c-87a7-82c6-7170-599504ce2630.webp",
+					"public/images/6fdf339f-e6bc-814a-0c2c-0922ebe63acb.webp",
+					"public/images/ef72ec83-30b3-911a-e24a-4888e5bbc83a.webp",
+					"public/images/cartnull_0de91f1.png",
+					"public/images/4d2f583e-e546-289f-3983-fdae7ef36e15.webp",
+					"public/images/5847bc13-6075-f588-cce6-c8b9585f93d0.webp",
+					"public/images/634ffa8f-c9bb-588f-0f1e-b9b43a490e8b.webp",
+					"public/images/89af1459-13b7-a616-82e7-91fd66a4eb4a.webp",
+					"public/images/ba4af9a3-8566-ac02-472b-62a3e27e2a9f.webp",
+					"public/images/23908983-5297-8031-dcd9-e6353061ea73.webp",
+					"public/images/f5ff593a-c3bd-5f9c-287e-bad59e4afcfb.webp",
+					"public/images/a69a6d6c-7e7f-5f8d-0d5e-995ce5907cd0.webp",
+					"public/images/0e60f6a8-225d-ca42-4ec6-59f98b8a8c75.webp",
+					"public/images/c72ee0ac-caf0-ada2-92af-a71e98d6396a.webp",
+					"public/images/bd7fed39-f284-080b-91f5-903ce2163ede.webp",
+					"public/css/shopping-list-less.css",
+					"public/images/6f19ca85-2326-8e80-0ecc-16134c33a89b.webp",
+					"public/css/mui.min.css",
+					"public/js/mui.min.js",
+					"public/fonts/mui.ttf",
+					"public/js/shopping-list.js"
+				],
+				"refer": [
+					"public/index.html",
+					"public/myaccount_content.html",
+					"public/shopping-list-content.html",
+					"public/login.html"
+				],
+				"priority": 0
+			},
+			"public/shopping-list-content.html": {
+				"resources": [
+					"public/images/b9c1eb48-dbb9-82f5-a852-9a1d936ffe33.webp",
+					"public/images/91d26eb4-b56f-f346-a6e4-77502cdffabb.webp",
+					"public/images/spr3_03.png",
+					"public/images/165c4b64-9b2c-8b25-483c-f701ca44c3fd.webp",
+					"public/images/1a968483-a5a6-4a6c-f002-ae89f1a1548f.webp",
+					"public/images/0411885e-1e94-9c05-8794-c64708815997.webp",
+					"public/images/more_b95e7f3.png",
+					"public/images/79207f50-7390-a8e8-9829-78acae3f07db.webp",
+					"public/images/f5760651-1458-b2d0-6e7b-c8748897118d.webp",
+					"public/images/5139d238-590c-e777-3915-0ca949cfc9d7.webp",
+					"public/images/8796840c-252b-3535-1045-16a1026bb288.webp",
+					"public/images/spr3_01.png",
+					"public/images/97c2e91e-523e-3988-3abc-aacc824f2737.webp",
+					"public/images/2f14be60-9c43-c070-3f1f-7bf3616e2167.webp",
+					"public/css/shopping-list-content.css",
+					"public/images/d8ef90e9-1c80-4024-5ba3-32b74b653c4e.webp",
+					"public/images/6b14174a-1b9d-dce8-3763-7d2292977189.webp",
+					"public/images/65994054-5eee-c474-3142-67fecdaf8eb2.webp",
+					"public/images/top.png",
+					"public/images/c310dfb7-360d-e47a-3769-0edf1c6ad716.webp",
+					"public/images/back_48bef14.png",
+					"public/images/spr3_02.png",
+					"public/images/d5b7946d-3af2-d9e2-089c-e2262fb651e4.webp",
+					"public/images/f8506d49-9a6e-7f39-cada-fdb1f6abd3ee.webp",
+					"public/images/7166480e-406d-2c35-add4-161dc9ac202f.webp",
+					"public/images/85691281-b472-ff8a-26b2-acd4349f0fd2.webp",
+					"public/images/3a7586df-8a68-002d-56c0-023d89ccef53.webp",
+					"public/images/ccae3c8f-86ff-3b48-530d-86ace1476776.webp",
+					"public/images/469563ff-ceba-cbb4-d46a-d621ce701250.webp",
+					"public/images/580583fe-2a83-3f64-5c4b-c53cc526b54c.webp",
+					"public/images/d693ee35-bec8-3bce-fa28-b4bef11d148c.webp",
+					"public/images/56c90e5e-325a-3274-f6ed-3524b704df3c.webp",
+					"public/js/shopping-list-content.js",
+					"public/js/mui.min.js",
+					"public/images/0e60f6a8-225d-ca42-4ec6-59f98b8a8c75.webp",
+					"public/css/mui.min.css",
+					"public/fonts/mui.ttf",
+					"public/images/138fd453-4cbf-b780-d9b8-bdfa48c8ff41.webp"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"public/classify-details-product01.html": {
+				"resources": [
+					"public/images/img/classify/carou12.webp",
+					"public/images/img/classify/carou16.webp",
+					"public/images/img/classify/carou10.webp",
+					"public/images/img/classify/carou08.webp",
+					"public/images/img/classify/carou13.webp",
+					"public/images/img/classify/carou06.webp",
+					"public/images/img/classify/canshu08.webp",
+					"public/images/img/classify/tuijian02.webp",
+					"public/images/img/classify/canshu04.webp",
+					"public/images/img/classify/canshu05.webp",
+					"public/images/img/classify/tuijian08.webp",
+					"public/images/img/classify/tuijian01.webp",
+					"public/images/img/classify/carou02.webp",
+					"public/images/img/classify/tuijian06.webp",
+					"public/images/img/classify/canshu06.webp",
+					"public/images/img/classify/carou17.webp",
+					"public/images/img/classify/tuijian03.webp",
+					"public/images/img/classify/carou07.webp",
+					"public/images/img/classify/carou15.webp",
+					"public/images/img/classify/carou09.webp",
+					"public/images/img/classify/canshu02.webp",
+					"public/images/img/classify/tuijian04.webp",
+					"public/images/img/classify/canshu07.webp",
+					"public/images/img/classify/carou-botton.jpg",
+					"public/images/img/classify/carou14.webp",
+					"public/images/img/classify/canshu10.webp",
+					"public/images/img/classify/canshu01.webp",
+					"public/images/img/classify/tuijian05.webp",
+					"public/images/img/classify/carou05.webp",
+					"public/images/img/classify/tuijian07.webp",
+					"public/images/img/classify/carou18.webp",
+					"public/images/img/classify/carou.webp",
+					"public/images/img/classify/carou03.webp",
+					"public/images/img/classify/canshu11.webp",
+					"public/images/img/classify/carou11.webp",
+					"public/images/img/classify/canshu03.webp",
+					"public/js/mui.min.js",
+					"public/css/mui.min.css",
+					"public/classify.html",
+					"public/fonts/mui.ttf",
+					"public/css/classify.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"public/classify.html": {
+				"resources": [
+					"public/images/img/电视、-盒子/T1_4hQBjWT1RC2b46K.webp",
+					"public/images/img/手机-电话卡/cd0f7a82-6b62-92d0-54fc-c68ca55c9a83.webp",
+					"public/images/img/手机-电话卡/42d897e1-c84b-e8bd-b0c9-6cf400518420.webp",
+					"public/images/img/保护类配件/T1XKE_B_hT1R4cSCrK.png",
+					"public/images/img/1/3.webp.jpg",
+					"public/images/img/手机-电话卡/ea31125b-e59b-5ef4-2ac6-bbc55a0bf0e4.webp",
+					"public/images/img/笔记本-平板/78f79377-06a6-2cb7-b2f1-ea6800380235.webp",
+					"public/images/img/智能硬件-路由器/e256f831-9f05-c3be-712c-51f80306bb06.webp",
+					"public/images/img/移动电源-插线板-电池/5c355e32-d71f-8617-8cdb-94c29fa8c043.webp",
+					"public/images/img/智能硬件-路由器/214dbb4c-2d35-4438-bb0c-8dbb43d417a5.webp",
+					"public/images/img/耳机-音响-存储卡/3d940e14-5f40-c997-2bcc-abefc96b6511.webp",
+					"public/images/img/耳机-音响-存储卡/T1zdxjBbET1RC2b46K.webp",
+					"public/images/img/电视、-盒子/T1laxQBjWT1RC2b46K.webp",
+					"public/images/img/小米生活方式/T1OkLjBCEv1RC2b46K.webp",
+					"public/images/img/耳机-音响-存储卡/T1t2x_BTZT1R4cSCrK.png",
+					"public/images/img/移动电源-插线板-电池/f363e2c6-b7a0-5391-4886-f5f327272515.webp",
+					"public/css/mui.min.css",
+					"public/images/img/手机-电话卡/166fb597-fc1f-93dc-00eb-04be8e716710.webp",
+					"public/images/img/耳机-音响-存储卡/7a7421ed-bcf5-8087-14cb-c91491886d62.webp",
+					"public/images/img/智能硬件-路由器/T1vsb_BQhT1R4cSCrK.png",
+					"public/images/img/笔记本-平板/8f988cdf-e9e1-b0e9-39bf-976cea499c00.webp",
+					"public/images/img/1/4.webp.jpg",
+					"public/images/img/小米生活方式/T1sDbgB4Yv1RC2b46K.webp",
+					"public/images/img/优惠套装/4701d6b6-0457-a8c4-2b6b-96d460929b29.webp",
+					"public/images/img/1/9.webp.jpg",
+					"public/images/img/智能硬件-路由器/T1jZLQBsYT1RC2b46K.webp",
+					"public/images/img/手机-电话卡/4224a6d2-3c68-a52b-aff4-aaf14996a0c2.webp",
+					"public/images/img/小米生活方式/d8a7306d-ef92-2224-ce4a-fd6c44f3b412.webp",
+					"public/images/img/小米生活方式/9c51b8d7-e2a6-ea28-a07a-79b1b6791802.webp",
+					"public/images/img/耳机-音响-存储卡/T1fOA_B_YT1R4cSCrK.png",
+					"public/images/img/小米生活方式/b8794d03-b187-5b53-a452-80c1d96c8a43.webp",
+					"public/images/img/电视、-盒子/T19iJQBThT1RC2b46K.webp",
+					"public/images/img/小米生活方式/e3990a5d-dca7-a389-d353-13820062e70d.webp",
+					"public/images/img/小米生活方式/T1mIEjBbLT1RC2b46K.webp",
+					"public/images/img/小米生活方式/ca3c0b20-5069-50f0-2500-6e13ac4ac3cf.webp",
+					"public/images/img/笔记本-平板/T1OoxjByYv1RC2b46K (1).webp",
+					"public/images/img/小米生活方式/6f4abb61-d5d0-f82d-e869-fd1020f44743.webp",
+					"public/css/classify.css",
+					"public/images/img/智能硬件-路由器/102cdb60-8687-dcb1-7ee9-5b60775deb75.webp",
+					"public/images/img/智能硬件-路由器/T1a3LgB5Lv1RC2b46K.webp",
+					"public/images/img/1/6.webp.jpg",
+					"public/images/img/小米生活方式/3c99b2df-3f6c-0385-8291-5f6748393477.webp",
+					"public/images/img/耳机-音响-存储卡/9aca9575-fb49-39e2-dfac-ce34c0f6b64c.webp",
+					"public/images/img/保护类配件/T1nOEjBmVv1RC2b46K.webp",
+					"public/images/img/智能硬件-路由器/T1L3CjB4Cv1RC2b46K.webp",
+					"public/images/img/优惠套装/ef38571f-b2a6-adb9-2383-6711a448710c.webp",
+					"public/images/img/1/7.webp.jpg",
+					"public/images/img/电视、-盒子/T1BbZjBybv1RC2b46K.webp",
+					"public/images/img/电视、-盒子/T1cNx_B_Dv1RC2b46K.webp",
+					"public/images/img/电视、-盒子/T1x7V_BsJT1R4cSCrK.png",
+					"public/js/mui.min.js",
+					"public/images/img/小米生活方式/e627fa46-a4de-d457-0061-d2fe6ca54b06.webp",
+					"public/images/img/智能硬件-路由器/769fa561-27bc-b13d-0e9b-cfe21b59e126.webp",
+					"public/images/img/1/2.webp.jpg",
+					"public/images/img/电视、-盒子/70cb76c1-d658-66ae-cf88-556f73bbaa47.webp",
+					"public/images/img/智能硬件-路由器/4660dfb1-851f-7721-1b73-04af02ceb36c (1).webp",
+					"public/images/img/1/8.webp.jpg",
+					"public/images/img/小米生活方式/895dd00c-466c-1b68-c093-1cc56f68c948.webp",
+					"public/images/img/智能硬件-路由器/6c69c559-3249-2a11-ed1b-3e05e74ad2f1.webp",
+					"public/images/img/智能硬件-路由器/87ea3877-baba-0a50-1cf9-695c2f216283.webp",
+					"public/images/img/电视、-盒子/T1b_ZgBKEv1RC2b46K.webp",
+					"public/images/img/移动电源-插线板-电池/3186b86a-c136-272c-a48f-bcc7771bb34f.webp",
+					"public/images/img/移动电源-插线板-电池/T1pSDjBjLT1RC2b46K.webp",
+					"public/images/img/手机-电话卡/4da5e7b7-a95f-5b40-e00b-466a21cf584d.webp",
+					"public/images/img/智能硬件-路由器/0aa106cf-a218-30e7-9354-2f58c58f1158.webp",
+					"public/images/img/小米生活方式/8886e21b-0d99-b5c7-9d5a-944291a031ab.webp",
+					"public/images/img/1/5.webp.jpg",
+					"public/images/img/智能硬件-路由器/1a00f03b-c0e4-f275-b71e-7177a6e8b96b.webp",
+					"public/images/img/小米生活方式/8dc428d7-31ea-2cc8-7165-db0953b33518.webp",
+					"public/images/img/电视、-盒子/e34e9f6f-a6b9-d5d0-5888-20f52aca8b76.webp",
+					"public/images/img/手机-电话卡/47a1c47b-4bf1-db72-557a-a33be45d48e9.webp",
+					"public/images/img/移动电源-插线板-电池/T1.MhgBgxv1RC2b46K.webp",
+					"public/images/img/移动电源-插线板-电池/02bfe458-69e9-811a-9dd0-3dbc4d92a364.webp",
+					"public/images/img/智能硬件-路由器/T1hyAgB_VT1R4cSCrK.png",
+					"public/images/img/1/10.webp.jpg",
+					"public/images/img/智能硬件-路由器/84f55401-b25f-fe05-c156-fb8681d9c890.webp",
+					"public/images/img/智能硬件-路由器/T14fhjBvhv1RC2b46K.webp",
+					"public/images/img/手机-电话卡/98b9e78e-62c7-c7d0-4253-0b521f351a71.webp",
+					"public/images/img/手机-电话卡/a3352da9-2a93-8a28-d198-8218c5136669.webp",
+					"public/images/img/智能硬件-路由器/18924b82-3837-0d62-d852-7a08890fa695.webp",
+					"public/images/img/智能硬件-路由器/2081ed4f-b3a9-1c54-58e8-f2387f3b7ed5.webp",
+					"public/images/img/笔记本-平板/9d4878d9-64d3-8718-320d-91c380dccd70 (1).webp",
+					"public/images/img/手机-电话卡/968201b7-2348-7c15-2a06-cc81debacb50.webp",
+					"public/images/img/耳机-音响-存储卡/be4e8cc1-b602-fb2c-b2cf-b7e6ebcadca7.webp",
+					"public/images/img/小米生活方式/792cc7b8-c60d-8132-5702-1e75dc394269.webp",
+					"public/images/img/电视、-盒子/ff55e690-fa54-f7ac-0936-7c5542c3f0af.webp",
+					"public/images/img/电视、-盒子/T1WkL_B_bv1RC2b46K.webp",
+					"public/images/img/1/1.webp.jpg",
+					"public/images/img/优惠套装/32242da4-357c-b0f0-b52c-aafd585a943d.webp",
+					"public/images/img/智能硬件-路由器/T1EvEjBXKv1RC2b46K.webp",
+					"public/images/img/耳机-音响-存储卡/eda0399b-fb8d-085f-1e71-2eb072508eb4.webp",
+					"public/images/img/智能硬件-路由器/07f7f729-fa0f-093a-a444-42058ff7bae1.webp",
+					"public/images/img/电视、-盒子/T1tBCjBQxT1RC2b46K.webp",
+					"public/classify-details-product01.html",
+					"public/fonts/mui.ttf",
+					"public/images/img/shoujicard/98b9e78e-62c7-c7d0-4253-0b521f351a71.webp",
+					"public/images/img/shoujicard/166fb597-fc1f-93dc-00eb-04be8e716710.webp",
+					"public/images/img/shoujicard/a3352da9-2a93-8a28-d198-8218c5136669.webp",
+					"public/images/img/shoujicard/ea31125b-e59b-5ef4-2ac6-bbc55a0bf0e4.webp",
+					"public/images/img/shoujicard/4da5e7b7-a95f-5b40-e00b-466a21cf584d.webp",
+					"public/images/img/shoujicard/42d897e1-c84b-e8bd-b0c9-6cf400518420.webp",
+					"public/images/img/shoujicard/cd0f7a82-6b62-92d0-54fc-c68ca55c9a83.webp",
+					"public/images/img/shoujicard/968201b7-2348-7c15-2a06-cc81debacb50.webp",
+					"public/images/img/shoujicard/47a1c47b-4bf1-db72-557a-a33be45d48e9.webp",
+					"public/images/img/shoujicard/4224a6d2-3c68-a52b-aff4-aaf14996a0c2.webp",
+					"public/images/img/earphone/9aca9575-fb49-39e2-dfac-ce34c0f6b64c.webp",
+					"public/images/img/battery/02bfe458-69e9-811a-9dd0-3dbc4d92a364.webp",
+					"public/images/img/battery/f363e2c6-b7a0-5391-4886-f5f327272515.webp",
+					"public/images/img/lifepattern/T1mIEjBbLT1RC2b46K.webp",
+					"public/images/img/earphone/T1zdxjBbET1RC2b46K.webp",
+					"public/images/img/lifepattern/3c99b2df-3f6c-0385-8291-5f6748393477.webp",
+					"public/images/img/tv/T1cNx_B_Dv1RC2b46K.webp",
+					"public/images/img/router/T1hyAgB_VT1R4cSCrK.png",
+					"public/images/img/router/2081ed4f-b3a9-1c54-58e8-f2387f3b7ed5.webp",
+					"public/images/img/router/214dbb4c-2d35-4438-bb0c-8dbb43d417a5.webp",
+					"public/images/img/battery/T1.MhgBgxv1RC2b46K.webp",
+					"public/images/img/tv/T1laxQBjWT1RC2b46K.webp",
+					"public/images/img/lifepattern/792cc7b8-c60d-8132-5702-1e75dc394269.webp",
+					"public/images/img/router/T1vsb_BQhT1R4cSCrK.png",
+					"public/images/img/tv/T1WkL_B_bv1RC2b46K.webp",
+					"public/images/img/router/T1L3CjB4Cv1RC2b46K.webp",
+					"public/images/img/router/0aa106cf-a218-30e7-9354-2f58c58f1158.webp",
+					"public/images/img/discount/ef38571f-b2a6-adb9-2383-6711a448710c.webp",
+					"public/images/img/discount/4701d6b6-0457-a8c4-2b6b-96d460929b29.webp",
+					"public/images/img/lifepattern/9c51b8d7-e2a6-ea28-a07a-79b1b6791802.webp",
+					"public/images/img/router/T1jZLQBsYT1RC2b46K.webp",
+					"public/images/img/battery/T1pSDjBjLT1RC2b46K.webp",
+					"public/images/img/discount/32242da4-357c-b0f0-b52c-aafd585a943d.webp",
+					"public/images/img/battery/3186b86a-c136-272c-a48f-bcc7771bb34f.webp",
+					"public/images/img/router/T1EvEjBXKv1RC2b46K.webp",
+					"public/images/img/lifepattern/895dd00c-466c-1b68-c093-1cc56f68c948.webp",
+					"public/images/img/earphone/T1fOA_B_YT1R4cSCrK.png",
+					"public/images/img/router/1a00f03b-c0e4-f275-b71e-7177a6e8b96b.webp",
+					"public/images/img/lifepattern/T1OkLjBCEv1RC2b46K.webp",
+					"public/images/img/earphone/T1t2x_BTZT1R4cSCrK.png",
+					"public/images/img/earphone/3d940e14-5f40-c997-2bcc-abefc96b6511.webp",
+					"public/images/img/computer/9d4878d9-64d3-8718-320d-91c380dccd70 (1).webp",
+					"public/images/img/lifepattern/d8a7306d-ef92-2224-ce4a-fd6c44f3b412.webp",
+					"public/images/img/earphone/7a7421ed-bcf5-8087-14cb-c91491886d62.webp",
+					"public/images/img/protect/T1XKE_B_hT1R4cSCrK.png",
+					"public/images/img/earphone/eda0399b-fb8d-085f-1e71-2eb072508eb4.webp",
+					"public/images/img/router/6c69c559-3249-2a11-ed1b-3e05e74ad2f1.webp",
+					"public/images/img/router/87ea3877-baba-0a50-1cf9-695c2f216283.webp",
+					"public/images/img/router/84f55401-b25f-fe05-c156-fb8681d9c890.webp",
+					"public/images/img/tv/T1BbZjBybv1RC2b46K.webp",
+					"public/images/img/lifepattern/ca3c0b20-5069-50f0-2500-6e13ac4ac3cf.webp",
+					"public/images/img/tv/T1x7V_BsJT1R4cSCrK.png",
+					"public/images/img/earphone/be4e8cc1-b602-fb2c-b2cf-b7e6ebcadca7.webp",
+					"public/images/img/tv/70cb76c1-d658-66ae-cf88-556f73bbaa47.webp",
+					"public/images/img/lifepattern/8886e21b-0d99-b5c7-9d5a-944291a031ab.webp",
+					"public/images/img/router/4660dfb1-851f-7721-1b73-04af02ceb36c (1).webp",
+					"public/images/img/lifepattern/e3990a5d-dca7-a389-d353-13820062e70d.webp",
+					"public/images/img/tv/T1b_ZgBKEv1RC2b46K.webp",
+					"public/images/img/tv/T19iJQBThT1RC2b46K.webp",
+					"public/images/img/computer/78f79377-06a6-2cb7-b2f1-ea6800380235.webp",
+					"public/images/img/router/e256f831-9f05-c3be-712c-51f80306bb06.webp",
+					"public/images/img/router/07f7f729-fa0f-093a-a444-42058ff7bae1.webp",
+					"public/images/img/router/T14fhjBvhv1RC2b46K.webp",
+					"public/images/img/computer/T1OoxjByYv1RC2b46K (1).webp",
+					"public/images/img/tv/T1tBCjBQxT1RC2b46K.webp",
+					"public/images/img/lifepattern/8dc428d7-31ea-2cc8-7165-db0953b33518.webp",
+					"public/images/img/lifepattern/b8794d03-b187-5b53-a452-80c1d96c8a43.webp",
+					"public/images/img/router/T1a3LgB5Lv1RC2b46K.webp",
+					"public/images/img/router/769fa561-27bc-b13d-0e9b-cfe21b59e126.webp",
+					"public/images/img/battery/5c355e32-d71f-8617-8cdb-94c29fa8c043.webp",
+					"public/images/img/lifepattern/e627fa46-a4de-d457-0061-d2fe6ca54b06.webp",
+					"public/images/img/tv/T1_4hQBjWT1RC2b46K.webp",
+					"public/images/img/router/102cdb60-8687-dcb1-7ee9-5b60775deb75.webp",
+					"public/images/img/lifepattern/T1sDbgB4Yv1RC2b46K.webp",
+					"public/images/img/router/18924b82-3837-0d62-d852-7a08890fa695.webp",
+					"public/images/img/protect/T1nOEjBmVv1RC2b46K.webp",
+					"public/images/img/lifepattern/6f4abb61-d5d0-f82d-e869-fd1020f44743.webp",
+					"public/images/img/tv/e34e9f6f-a6b9-d5d0-5888-20f52aca8b76.webp",
+					"public/images/img/computer/8f988cdf-e9e1-b0e9-39bf-976cea499c00.webp",
+					"public/images/img/tv/ff55e690-fa54-f7ac-0936-7c5542c3f0af.webp"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"public/main.html": {
+				"resources": [
+					"public/images/b94e5c672e37010e672dd345fc4f1a76.jpg",
+					"public/images/e2c0ce91-7825-c635-4a60-cedcafc835c9.webp",
+					"public/images/6b0e3756-f419-1877-9d0f-5ea9ceca718e.webp",
+					"public/images/7f47b940-7797-37d9-0a82-9fc08568e277.webp",
+					"public/images/6079f951-e936-1532-f99f-be6a041c4ac7.webp",
+					"public/images/1d002c4c69baa136b19fde19758e00c0.png",
+					"public/images/0411885e-1e94-9c05-8794-c64708815997.webp",
+					"public/images/89e274ff-7806-93c0-1789-404ee79acfaa.webp",
+					"public/images/dfce0c2b-a3c6-c24b-1d12-cbae16a8ceb5.webp",
+					"public/images/853f07ff-e8e8-28d2-8403-9fdc60a26020.webp",
+					"public/images/36bd129f-8fd6-3c4b-6d71-a58141b7cc91.webp",
+					"public/images/fd88c85e-d74f-1002-61d0-e001fbb02cf6.webp",
+					"public/images/ba4af9a3-8566-ac02-472b-62a3e27e2a9f.webp",
+					"public/images/22f1a143-59fc-fc88-ced9-4f6edf5f4f6e.webp",
+					"public/images/e95ade2750a7fde92369b416c7d3176d.jpg",
+					"public/images/42398315-0632-5cb9-0c8b-72f985ffa645.webp",
+					"public/images/1c13fbf72b71e39eada70ccc18071ba1.jpg",
+					"public/images/a1e3c689-cca9-8f24-063c-17d1bb80ad4c.webp",
+					"public/images/cd4ec4a5-aeca-4cbe-61f3-0ef41b04ce70.webp",
+					"public/images/0cdeefdd5dec6556edd36649a83f9067.jpg",
+					"public/images/810f5f06b0427e3af4f7d614e3429336.png",
+					"public/images/604bf5ef8344c5c5cacb2e7347d1d842.png",
+					"public/images/25659893-c5fa-50a2-4889-2ab219d2d0ce.webp",
+					"public/images/88d66ffc-ea86-11cc-f9ec-c1eac479578e.webp",
+					"public/images/bd2c6b2f01469ae44fb39d50634e05a3.jpg",
+					"public/images/b804a26b-0991-f438-5659-eed75686ef83.webp",
+					"public/images/top_1a2bcd9.png",
+					"public/images/logo_e6453b2.png",
+					"public/images/9fb18a9d-73fd-5be1-b32e-c4f17884d83e.webp",
+					"public/images/12e26309-53c5-d8f1-3caa-7c2136aa0dba.webp",
+					"public/images/fc44065b854fdcc6a2970de6084578f1.png",
+					"public/images/fcf0076a92f272e4a8c1500544f0a001.jpg",
+					"public/images/7939e1581fe73d0d12e32692087b1f62.png",
+					"public/images/d8330bd705d9af7f09b55514aa621f97.jpg",
+					"public/images/f4abda3979c664114b0d78562c9f4301.jpg",
+					"public/images/cd919aac35248e1a0100891b4382edf6.jpg",
+					"public/images/036bed3457b5a1096db58aed1f2ba091.jpg",
+					"public/images/76f98ed9-86c5-dcda-0ba2-b79f62b0f195.webp",
+					"public/images/4d2c94ce-836d-c56d-a1a6-963fc0ce4a19.webp",
+					"public/js/main.js",
+					"public/images/b85392e5-d5b5-147e-d3ee-3462e1bb9093.webp",
+					"public/images/2b4dc25e-1925-9a4c-0e5c-33169c5e1b5f.webp",
+					"public/images/e657d73b-72c8-b6ff-1b14-4aeca1035a65.webp",
+					"public/images/56eb8c2e-de2c-26e3-8d23-969126f788e7.webp",
+					"public/images/e13037d7-15b7-ea7d-29f5-faa587c19006.webp",
+					"public/images/e58f65d2-a83b-c477-ac0b-574181ae0d2c.webp",
+					"public/css/main.css",
+					"public/images/6cd3540241dc0cf9a36177d69f5be23e.png",
+					"public/images/f3008abf-8a44-eeaf-96c9-1e9d1a0cbd33.webp",
+					"public/images/2eea25fc-6e96-b211-e760-5e97fb8fe12f.webp",
+					"public/images/e7248caa-98e2-312e-26b9-fd2258926999.webp",
+					"public/images/da35f0fa-8e96-7a3d-42fc-d918f69d70bc.webp",
+					"public/images/94ed1e41-8331-698f-72c0-b2dac3223d03.webp",
+					"public/images/80937c89-e7ea-7b46-2572-6f0988a621cb.webp",
+					"public/images/c8f71741-1052-5391-9211-7a12460141ee.webp",
+					"public/images/7e4f01ed-e515-064f-f7db-fe93dcb2e4d3.webp",
+					"public/images/93da5fe425732dfd24f86948309dedf7.jpg",
+					"public/images/58585b08c8902b2543ba7519bcdaa859.png",
+					"public/images/860ccf47528cf788af3a436c3dc91bf3.jpg",
+					"public/images/7f464eeef72ffe9e7b5e7c583dd59a51.jpg",
+					"public/images/7597b617b71d01d8f8c419a5dc491b62.png",
+					"public/images/79427ee9-d8d3-525c-2c3f-bc2181b8517c.webp",
+					"public/images/a1e249327edf536013dfda1f618b9183.png",
+					"public/images/85b26c5f-a017-644a-b183-06cf7b1d93fd.webp",
+					"public/images/8b9869ae2d3961272f0bf5ef12bf4a48.jpg",
+					"public/images/bfca3ba8b0a1b161234378040fca3234.jpg",
+					"public/images/5847bc13-6075-f588-cce6-c8b9585f93d0.webp",
+					"public/images/38fc8decb0064607fdfffcc56c16e3a5.png",
+					"public/images/334af598-eb13-31f7-edb8-10da0b7857be.webp",
+					"public/images/30e990c11c059e0714d99e4b6577f806.jpg",
+					"public/images/e8107b95-1726-93bc-6017-e05f212b7988.webp",
+					"public/images/a532d73f-f350-b0d5-4139-5bbea426686c.webp",
+					"public/images/09aeb117-86e1-3c1c-4d59-5735d64e7076.webp",
+					"public/images/2a4b8f75-fd77-9d57-5cad-edf5734ada82.webp",
+					"public/images/2b0f5e98-c950-01ff-05cc-294f4e190ff3.webp",
+					"public/images/b93bd9d9-2118-4e08-0399-2a0c6526c83c.webp",
+					"public/images/f3d5efb1-6050-31a6-5f72-48df7f440215.webp",
+					"public/images/cbd77a40-3dd3-7fda-c9c6-b7f9bbf3a409.webp",
+					"public/images/bbb18838-aae5-9ed0-6c83-c126fd5f4659.webp",
+					"public/images/sczb_ed0a4af.png",
+					"public/css/mui.min.css",
+					"public/js/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"public/images/cart_white_35b9dc4.png",
+				"public/images/sinaweibo.png",
+				"public/images/milogo.png",
+				"public/js/mui.js",
+				"public/css/myaccount_content.less",
+				"LICENSE",
+				"public/images/user_0319ba0.png",
+				"bower.json",
+				"public/images/qihoo.png",
+				"package.json",
+				"public/images/9ec81ff9-5ba8-136f-4869-098414ad042e.jpeg",
+				"public/images/qq.png",
+				"model/index.js",
+				"public/css/mui.css",
+				"public/images/cart_ae7d5a3.png",
+				"public/images/spr1_5b2e09c.png",
+				"public/images/icon_back_n.png",
+				"public/css/login.less",
+				"public/images/back2_085f04b.png",
+				"app.js",
+				"public/images/iconfont-tianjia.png",
+				"public/images/user-photo.png",
+				"public/images/weixin.png"
+			]
+		}
+	}
+}

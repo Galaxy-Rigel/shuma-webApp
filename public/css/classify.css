@@ -1,0 +1,109 @@
+div a {display: block;}
+
+img{position: relative;}
+section{
+		margin-top: 2.6rem;
+		}
+
+
+.classify-pho{
+	margin-top: .2rem;
+}
+.classify-pho-topimg{
+	width: 100%;margin-top: .4rem;margin-bottom: .4rem;
+}
+.classify-pho-bonimg{
+	width:100%;
+}
+.classify-section{
+	background:#fff;
+}
+.classify-pho-text{
+	text-align: center;font-size: 0.9rem;
+	font-weight: 400;margin-top: 0.2rem;height: 4.28rem;
+	line-height: 4.28rem;overflow: hidden;color: #333;
+	}
+.classify-pho-sdemo{
+	display: inline-block;text-align: center;
+	margin-top: .2rem;margin-bottom: .3rem;
+	}
+.classify-pho-sdemo img{width: 50%;}
+.classify-pho-name{
+	margin-top: 0.28rem;white-space: nowrap;
+	font-size: 0.28rem;color: rgba(0,0,0,.87);
+	overflow: hidden;text-overflow: ellipsis;
+}
+/*classify-details 的 CSS*/
+
+
+
+/*classify-details-product01 的css*/
+.details-product-body{
+	background-color: #FFFFFF;
+}
+.details-product-text{
+	margin-top: -1.5rem; margin-bottom: 1rem;
+}
+.details-product-p{
+	padding-left: 1rem;
+	color: #333333;font-size: 1.0rem;
+}
+.details-product-text a{
+	padding-right: .4rem;
+}
+.details-product-span{
+	color: #ff6635;padding-left: 1rem;
+	width: 100%;overflow: hidden;
+}
+.details-product-text02{
+	padding-left: 1rem; font-size: 0.3rem;
+	letter-spacing: .09rem; color: #b4b4b4;  
+}
+.details-product-btn{
+	padding-left: 1rem;
+}
+.details-product-btn button{
+	border: none; background-color: #f4f4f4;
+	color: #C0C0C0;margin-top: .5rem;font-size: .8rem;
+}
+.details-product-jieshao{
+	 text-align: center;
+}
+.jieshao-a1{
+	margin-left: 50%;
+	margin-right: 50%;
+}
+.jieshao-a2{
+	
+}
+.product-gs{
+	width: 100%;
+}
+.details-div01{
+	margin-top: 1rem;
+}
+.details-div01 img{
+	width: 100%;margin-top:-0.3rem;
+}
+/*为你推荐*/
+.details-recommend p{
+	margin-left: 1rem;
+}
+.details-recommend-text{
+	padding: 1.0rem;
+}
+.details-recommend-img{
+	width: 98%; 
+}
+.details-recommend-rigth{
+	text-align: right;
+}
+.details-p1{
+	color: #212121; font-weight: 500;
+}
+.details-p2{
+	color: #ff9657; font-weight: 500;
+}
+.details-rp{
+	text-align: left;
+}
